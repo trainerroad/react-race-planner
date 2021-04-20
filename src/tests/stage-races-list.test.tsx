@@ -76,7 +76,7 @@ test("renders stage races sorted oldest to newest when GET '/stage-races succeed
 });
 
 test("renders 'Error loading stage races' when GET '/stage-races' errors", async () => {
-  setupApp({ responseCode: 500 });
+  await setupApp({ responseCode: 500 });
   // error renders
   await waitFor(() => screen.getByText("Error loading stage races"));
   // error can be cleared
