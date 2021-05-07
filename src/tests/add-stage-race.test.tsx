@@ -150,13 +150,13 @@ test("calls POST '/stage-races' with stage race data and handles success [screen
     target: { value: "Stage 3" },
   });
   fireEvent.change(getStageDateInput(), {
-    target: { value: "2021-02-03" },
+    target: { value: "2021-02-04" },
   });
   mockedUniqid.mockImplementationOnce(() => "km24cw4e");
   fireEvent.click(getSaveButton());
   // stage 1, 2 and 3 are reflected in stage race form totals
   expect(
-    within(screen.getByTestId("stage-race-form-totals")).getByText("3 days")
+    within(screen.getByTestId("stage-race-form-totals")).getByText("4 days")
   ).toBeInTheDocument();
   // stages render sorted oldest to newest
   assertTextOrderByTestId("stage-name", ["Stage 1", "Stage 2", "Stage 3"]);
