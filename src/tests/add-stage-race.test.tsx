@@ -94,7 +94,7 @@ test("modal 'Add Stage' form", async () => {
   expect(withinModal.getByText("Add Stage Race")).toBeInTheDocument();
 });
 
-test("calls POST '/stage-races' with stage race data and handles success [screenshot 3]", async () => {
+test("calls POST '/stage-races' with stage race data and handles success", async () => {
   const {
     getStageRaceNameInput,
     getAddStageButton,
