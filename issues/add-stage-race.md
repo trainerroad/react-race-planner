@@ -34,4 +34,4 @@
 
   - Error can be cleared.
 
-  ![POST "/stage-race" error](./screenshots/add-stage-race/3.png)
+  ![POST "/stage-race" error](./screenshots/add-stage-race/4.png)
